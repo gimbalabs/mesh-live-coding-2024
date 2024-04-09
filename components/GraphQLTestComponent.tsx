@@ -20,7 +20,7 @@ export default function GraphQLTestComponent() {
 
   // #2 We make the query using useQuery hook
   const { data } = useQuery({
-    queryKey: ["films"],
+    queryKey: ["transactions"],
     queryFn: async () =>
       request(
         "https://d.graphql-api.iohk-preprod.dandelion.link/",
